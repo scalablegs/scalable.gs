@@ -22,6 +22,11 @@ Check out the example.html file in the example folder for a test file with a few
 
 
 ## Changelog:
+### v0.0.2 : February 3rd, 2011
+* Major name change from column to grid on class names
+* Formatting change of how the grid system is structured 
+* Updated the example files to the naming convention
+* The 3, 4 and 10 grid systems are "done"
 ### v0.0.1 : February 2nd, 2011
 First release, check out the website at [http://scalable.gs](http://scalable.gs)
 
@@ -32,19 +37,18 @@ The minified version is not available yet since the system is still in a very ea
 
 #### Todo:
 
-* Finish the 3,4 and 10 grid configurations
+* Adjustments to the 3,4 and 10 grid configurations
 * Add 12 and 24 grid configurations
-* Add the new box model with fallback to the floating model for IE.
-* Add Javascript functionality to enhance the mobile experience.
-* Create multiple demos to showcase the framework.
-* Create a website for the framework.
-** Create a configuration tool to minimise the compressed version with only the bits you want to download.
+* Add the new box model with fallback to the floating model for IE
+* Add Javascript functionality to enhance the mobile experience
+* Create multiple demos to showcase the framework
+* Create a website for the framework
+** Create a configuration tool to minimise the compressed version with only the bits you want to download
 * Add support for RTL (do it with the modernizr?)
 
 
 ## License:
 Scalable.gs is under a GNU General Public License V3.0
-*common components might be under a different license
 
 
 ### Example:
