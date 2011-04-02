@@ -22,13 +22,19 @@ Check out the example.html file in the example folder for a test file with a few
 
 
 ## Changelog:
+
+### v0.2.0 : April 2nd, 2011
+* Fixed an issue with media-query stacking.
+* Fixed a couple of typos
+* Added GPL v3 license to the license.md info file
+
 ### v0.1.0 : February 8th, 2011
 * Converted the work file over to LESS
-** Added accuracy since sizes are calculated
-** Added the compressed version, saves 30% space
+    * Added accuracy since sizes are calculated
+    * Added the compressed version, saves 30% space
 * Added the 12, 20 and 24 grid system configurations.
 * Every configuration has @media-query scaling for handheld devices
-** Might need some adjustments as the framework get tested more
+    * Might need some adjustments as the framework get tested more
 
 ### v0.0.2 : February 3rd, 2011
 * Major name change from column to grid on class names
@@ -51,7 +57,7 @@ The minified version is not available yet since the system is still in a very ea
 * Add Javascript functionality to enhance the mobile experience
 * Create multiple demos to showcase the framework
 * Create a website for the framework
-** Create a configuration tool to minimise the compressed version with only the bits you want to download
+    * Create a configuration tool to minimise the compressed version with only the bits you want to download
 * Add support for RTL (do it with the modernizr?)
 
 

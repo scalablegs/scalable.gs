@@ -4,3 +4,12 @@
 ehthumbs.db
 Icon?
 Thumbs.db
+.bundle
+db/*.sqlite3*
+log/*.log
+*.log
+tmp/
+doc/
+*.swp
+*~
+.DS_Store
