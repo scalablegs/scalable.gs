@@ -1,0 +1,75 @@
+// Configuration
+@max-sitewidth:95em;
+@min-sitewidth:10em;
+@margin-standard:2%;
+@margin-narrow:1%;
+@full-width:100%;
+.grid-setup-standard{
+	display:inline;float:left;position:relative;margin-left:@margin-standard;margin-right:@margin-standard;
+}
+.grid-setup-multiple{
+	display:inline;float:left;position:relative;margin-left:@margin-narrow;margin-right:@margin-narrow;
+}
+
+/*scalable.gs*/
+.scalable{margin-left:auto;margin-right:auto;min-width: @min-sitewidth; max-width: @max-sitewidth;position: relative;}
+.grid_first{margin-left:0;}.grid_last{margin-right:0;}
+
+/* 4 grid system */
+.grid_4-4,.grid_3-4,.grid_2-4,.grid_1-4{.grid-setup-standard}
+	.scalable{
+		.grid_4-4{width:((@full-width) - (@margin-standard * 2))}
+		.grid_3-4{width: 75%;}
+		.grid_2-4{width: 46%;}
+		.grid_1-4{width: 21%;}
+	}
+	/* push grids */
+		.scalable{
+			.grid-push_3-4{margin-left:75% + @margin-standard;}
+			.grid-push_2-4{margin-left:46% + @margin-standard;}
+			.grid-push_1-4{margin-left:21% + @margin-standard;}
+		}
+	/* pull grids */
+		.scalable{
+			.grid-pull_3-4{margin-left:-75% - @margin-standard;}
+			.grid-pull_2-4{margin-left:-46% - @margin-standard;}
+			.grid-pull_1-4{margin-left:-21% - @margin-standard;}
+		}
+	/* viewport scaling */
+		@media 	screen and (max-width: 770px),
+		 				screen and (max-device-width: 770px),
+						handheld and (max-width: 770px){	
+			.scalable{
+				.grid_4-4,.grid_3-4,.grid_2-4{width:((@full-width) - (@margin-standard * 2))}
+				.grid_1-4{width: 46%;}
+			}
+				/* push grids */
+				.scalable{
+					.grid-push_3-4{margin-left: @margin-standard;}
+					.grid-push_2-4{margin-left: @margin-standard;}
+					.grid-push_1-4{margin-left: @margin-standard;}
+
+				} 
+				/* pull grids */
+				.scalable{
+					.grid-pull_3-4{margin-left: @margin-standard;}
+					.grid-pull_2-4{margin-left: @margin-standard;}
+					.grid-pull_1-4{margin-left: @margin-standard;}
+				}
+		}
+		@media 	screen and (max-width: 320px),
+		 				screen and (max-device-width: 320px),
+						handheld and (max-device-width: 320px){
+			.scalable{
+				.grid_4-4,.grid_3-4,.grid_2-4,.grid_1-4{width:((@full-width) - (@margin-standard * 2))}
+			}
+		}
+/*SET CONTENT LIKE IMAGES,FLASH & VIDEO TO FILL THE WIDTH OF THE grid*/
+	img,object,video{max-width: 100%;}
+
+/*GROUPING OF ELEMENTS*/
+	.group:after{content: ".";display: block;height: 0;clear: both;visibility: hidden;}
+	/* IE6 */
+	* html .group{height: 1%;}
+	/* IE7 */
+	*:first-child+html .group{min-height: 1px;}

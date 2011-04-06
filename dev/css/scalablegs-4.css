@@ -1,0 +1,132 @@
+.grid-setup-standard {
+  display: inline;
+  float: left;
+  position: relative;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.grid-setup-multiple {
+  display: inline;
+  float: left;
+  position: relative;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+/*scalable.gs*/
+.scalable {
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 10em;
+  max-width: 95em;
+  position: relative;
+}
+.grid_first {
+  margin-left: 0;
+}
+.grid_last {
+  margin-right: 0;
+}
+/* 4 grid system */
+.grid_4-4,
+.grid_3-4,
+.grid_2-4,
+.grid_1-4 {
+  display: inline;
+  float: left;
+  position: relative;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.scalable .grid_4-4 {
+  width: 96%;
+}
+.scalable .grid_3-4 {
+  width: 75%;
+}
+.scalable .grid_2-4 {
+  width: 46%;
+}
+.scalable .grid_1-4 {
+  width: 21%;
+}
+/* push grids */
+.scalable .grid-push_3-4 {
+  margin-left: 77%;
+}
+.scalable .grid-push_2-4 {
+  margin-left: 48%;
+}
+.scalable .grid-push_1-4 {
+  margin-left: 23%;
+}
+/* pull grids */
+.scalable .grid-pull_3-4 {
+  margin-left: -77%;
+}
+.scalable .grid-pull_2-4 {
+  margin-left: -48%;
+}
+.scalable .grid-pull_1-4 {
+  margin-left: -23%;
+}
+/* viewport scaling */
+@media screen and (max-width: 770px),
+		 				screen and (max-device-width: 770px),
+						handheld and (max-width: 770px) {
+  .scalable .grid_4-4, .scalable .grid_3-4, .scalable .grid_2-4 {
+    width: 96%;
+  }
+  .scalable .grid_1-4 {
+    width: 46%;
+  }
+  /* push grids */
+  .scalable .grid-push_3-4 {
+    margin-left: 2%;
+  }
+  .scalable .grid-push_2-4 {
+    margin-left: 2%;
+  }
+  .scalable .grid-push_1-4 {
+    margin-left: 2%;
+  }
+  /* pull grids */
+  .scalable .grid-pull_3-4 {
+    margin-left: 2%;
+  }
+  .scalable .grid-pull_2-4 {
+    margin-left: 2%;
+  }
+  .scalable .grid-pull_1-4 {
+    margin-left: 2%;
+  }
+}
+@media screen and (max-width: 320px),
+		 				screen and (max-device-width: 320px),
+						handheld and (max-device-width: 320px) {
+  .scalable .grid_4-4,
+  .scalable .grid_3-4,
+  .scalable .grid_2-4,
+  .scalable .grid_1-4 {
+    width: 96%;
+  }
+}
+/*SET CONTENT LIKE IMAGES,FLASH & VIDEO TO FILL THE WIDTH OF THE grid*/
+img, object, video {
+  max-width: 100%;
+}
+/*GROUPING OF ELEMENTS*/
+.group:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+/* IE6 */
+* html .group {
+  height: 1%;
+}
+/* IE7 */
+*:first-child + html .group {
+  min-height: 1px;
+}

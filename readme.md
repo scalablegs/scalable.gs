@@ -5,7 +5,10 @@ It follows up on the main ideas from the [960.gs](http://960.gs), but makes it f
 
 
 ## Howto
+
+### CSS & LESS
 <ol>
+<li>Select your system, 3/4/10/12/20/24</li>
 <li>Add the .scalable class to your wrapper.</li>
 <li>Add grid_your-system, e.g. grid_3-10 until the row adds up to the last number in the class name.</li>
 <li>If you have nested tags that needs to be grid aligned inside an already grid aligned element, you need to use an alpha class on the first nested element. You then use the omega class on the last of the nested elements. This is done to remove the double margin nested grids create.</li>
@@ -13,18 +16,38 @@ It follows up on the main ideas from the [960.gs](http://960.gs), but makes it f
 </ol>
 
 
-### Customise:
-Customise the minimum and maximum width of the scalable class container on line 2 of the compressed file and line 3 on the dev file. 
+#### Customise:
+Customise the minimum and maximum width of the .scalable class container to sett the minimum and maximum boundaries of your application.
 
 
-### Tip
+#### Tip
 Check out the example.html file in the example folder for a test file with a few different setups.
+
+### SASS & compass-gem (alpha state)
+<ll>
+	<li>gem install compass-scalablegs-plugin</li>
+	<li>or</li>
+	<li>see dev/scalablegs.sass</li>	
+</ll>
+
+#### GEM source
+The compass-scalablegs-plugin source is available on [github](https://github.com/KDN/compass-scalablegs-plugin).
 
 
 ## Changelog:
 
-### v0.8.0 : April 5th, 2011
-* First beta release
+### v0.8.9 : April 7th, 2011 : Second beta
+* Extracted each of the grid system setups into their own files for easier implentation.
+    * Each grid system setup are now named with a dash and the max system number, scalablegs-12.css / scalablegs-12.less etc.
+		* The /example folder still include a combined LESS/CSS file with all the combinations for easy testing and examples.
+* Added SASS in form of a scalablegs.sass file in the /dev folder
+    * The framework now has a gem in alpha mode, the SASS file represented in this release is the core of that gem.
+        * gem install compass-scalablegs-plugin
+    * The SASS framework enables you to generate your desired setup on the fly.
+
+
+### v0.8.0 : April 5th, 2011 : First beta release
+* Bumping the version number as we get closer to release
 
 ### v0.2.0 : April 2nd, 2011
 * Fixed an issue with media-query stacking.
