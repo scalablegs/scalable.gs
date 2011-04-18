@@ -1,4 +1,4 @@
-# Scalable.gs [http://scalable.gs](http://scalable.gs)
+# Scalable.gs
 The Scalable Grid System or scalable.gs for short, is a device independent and cross screen size web development framework.
 
 It follows up on the main ideas from the [960.gs](http://960.gs), but makes it fluid like [cssgrid.net](http://cssgrid.net). It is topped off with some of the thoughts behind jQuery Mobile in addition to some custom mobile UX design.
@@ -24,11 +24,11 @@ Customise the minimum and maximum width of the .scalable class container to sett
 Check out the example.html file in the example folder for a test file with a few different setups.
 
 ### SASS & compass-gem (alpha state)
-<ll>
+<ul>
 	<li>gem install compass-scalablegs-plugin</li>
 	<li>or</li>
 	<li>see dev/scalablegs.sass</li>	
-</ll>
+</ul>
 
 #### GEM source
 The compass-scalablegs-plugin source is available on [github](https://github.com/KDN/compass-scalablegs-plugin).
