@@ -72,6 +72,15 @@ pre, code, kbd, samp { font-family: monospace, sans-serif; }
 
 
 body{background-image:-webkit-linear-gradient(top, #eee, #aaa);background-attachment:fixed;}
+	header{margin-top:1em;margin-bottom:1em;}
+		header h1{font-size:3.5em;font-weight:bold;display:block;padding: 0.3em .7em;text-align:center;border-top-left-radius:15px;border-top-right-radius:15px;box-shadow: inset 0px 2px 3px #000;}
+		header h2{display:none;}
+		
+		nav{}
+		nav ul{height:50px;overflow-y:hidden;border-bottom-left-radius:15px;border-bottom-right-radius:15px;box-shadow: inset 0px -2px 3px #000;}
+		nav li{list-style:none;margin-bottom:.1em;}
+		nav li a{display:block;padding:.7em 0;font-size:1.5em;text-align:center;}
+			nav li:first-child a{}
 	#main a{display:block;width:46%;margin:2%;float:left;}
 
 
@@ -91,7 +100,9 @@ body{background-image:-webkit-linear-gradient(top, #eee, #aaa);background-attach
 }
 @media screen and (min-width: 600px) {
 	/* Styling of the desktop experience of your website goes here */
-	#main a{width:29%;-webkit-transition:width .5s ease;}
+			nav li{float:left;list-style:none;}
+	
+		#main a{width:29%;-webkit-transition:width .5s ease;}
 }
 
 @media 	screen and (orientation:portrait), 
