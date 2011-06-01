@@ -1,12 +1,12 @@
 # Scalable.gs
 The Scalable Grid System or scalable.gs for short, is a device independent and cross screen size web development framework.
 
-It follows up on the main ideas from the [960.gs](http://960.gs), but makes it fluid like [cssgrid.net](http://cssgrid.net). It is topped off with some of the thoughts behind jQuery Mobile in addition to some custom mobile UX design.
+It follows up on the main ideas from the [960.gs](http://960.gs), but makes it fluid like [cssgrid.net](http://cssgrid.net).
 
 
 ## Howto
 
-### CSS & LESS
+### CSS
 <ol>
 <li>Select your system, 3/4/10/12/20/24</li>
 <li>Add the .scalable class to your wrapper.</li>
@@ -20,9 +20,6 @@ It follows up on the main ideas from the [960.gs](http://960.gs), but makes it f
 Customise the minimum and maximum width of the .scalable class container to sett the minimum and maximum boundaries of your application.
 
 
-#### Tip
-Check out the example.html file in the example folder for a test file with a few different setups.
-
 ### SASS & compass-gem (alpha state)
 <ul>
 	<li>gem install compass-scalablegs-plugin</li>
@@ -35,6 +32,10 @@ The compass-scalablegs-plugin source is available on [github](https://github.com
 
 
 ## Changelog:
+
+### v0.9.2 : June 2nd, 2011 : release candidate
+
+* Check the checkin of code for all the changes. The core naming of the grids stays the same, but the framework has shifted to a small screen first design process together with dynamic loading of CSS with JavaScript on large projects.
 
 ### v0.8.9 : April 7th, 2011 : Second beta
 * Extracted each of the grid system setups into their own files for easier implentation.
@@ -78,13 +79,8 @@ The minified version is not available yet since the system is still in a very ea
 
 #### Todo:
 
-* Bug fixes
-* Add the new box model with fallback to the floating model for IE
-* Add Javascript functionality to enhance the mobile experience
-* Create multiple demos to showcase the framework
 * Create a website for the framework
     * Create a configuration tool to minimise the compressed version with only the bits you want to download
-* Add support for RTL (do it with the modernizr?)
 
 
 ## License:
@@ -100,6 +96,7 @@ Major components:
 * YUI Profiling: BSD license
 * HTML5Doctor CSS reset: Public Domain
 * CSS Reset Reloaded: Public Domain
+* Adapt.js: GPL license
 
 Everything else from the HTML5 Boilerplate:
 * [The Unlicense](http://unlicense.org) (aka: public domain) 
@@ -110,7 +107,6 @@ Everything else from the HTML5 Boilerplate:
 This is a framework that intend to ease the creation of cross screen size web applications.
 
 
-## Releases 
-There are two releases: a commented version that you find in the dev folder and a stripped version you can find in the compressed folder.
+## Releases
 
 Watch the framework development in the github repository: [http://github.com/KDN/scalable.gs/](http://github.com/KDN/scalable.gs/)

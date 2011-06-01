@@ -68,25 +68,33 @@ pre, code, kbd, samp { font-family: monospace, sans-serif; }
 
 
 
+h1{font-weight:bold;}
+a{text-decoration:none;}
 
-
-
-body{background-image:-webkit-linear-gradient(top, #eee, #aaa);background-attachment:fixed;}
+body{background-image:-webkit-linear-gradient(top, #eee, #aaa);background-attachment:fixed;color:#555;}
 	header{margin-top:1em;margin-bottom:1em;}
-		header h1{font-size:3.5em;font-weight:bold;display:block;padding: 0.3em .7em;text-align:center;border-top-left-radius:15px;border-top-right-radius:15px;box-shadow: inset 0px 2px 3px #000;}
+		header h1{font-size:3.5em;background:#fff;font-weight:bold;display:block;padding: 0.3em .7em;text-align:center;border-top-left-radius:15px;border-top-right-radius:15px;box-shadow: inset 0px 2px 3px #000;}
 		header h2{display:none;}
 		
-		nav{}
-		nav ul{height:50px;overflow-y:hidden;border-bottom-left-radius:15px;border-bottom-right-radius:15px;box-shadow: inset 0px -2px 3px #000;}
+		nav{position:relative;}
+		nav ul{height:50px;-webkit-transition:height 1s ease;background:#fff;overflow-y:hidden;border-bottom-left-radius:15px;border-bottom-right-radius:15px;box-shadow: inset 0px -2px 3px #000;}
 		nav li{list-style:none;margin-bottom:.1em;}
-		nav li a{display:block;padding:.7em 0;font-size:1.5em;text-align:center;}
+		nav li a{display:block;padding:.7em 0;font-size:1.5em;text-align:center;color:#111;font-weight:bold;text-decoration:none;}
 			nav li:first-child a{}
-	#main a{display:block;width:46%;margin:2%;float:left;}
+		#nav-more{background:#fff;margin-left:42%;position:absolute;bottom:-2.4em;box-shadow:0 2px 3px #000;padding:.8em 2em;border-bottom-left-radius:.5em;border-bottom-right-radius:.5em;}
 
+		#main{background:#fff;-webkit-box-shadow: 0 0 .4em #000;border-radius:.5em;}		
+			#main a{display:block;width:46%;margin:2%;float:left;}
+			#main a img{-webkit-box-shadow: inset 0 0 .4em #000;display:block;}
 
-
-
-
+		aside div{background:#fff;-webkit-box-shadow: 0 0 .4em #000;border-radius:.5em;padding:1em;margin-bottom:2em;}
+		aside ul{margin:1em 0;}
+		aside li{list-style:none;margin-bottom:.5em;}
+			aside li a{color:#fff;background:rgba(100,100,255,1);display:block;line-height:2em;text-align:center;text-decoration:none;}
+		aside form{width:100%;}
+			aside input{width:90%;padding:1em 5% ;margin-bottom:1em;}
+			aside textarea{width:90%;padding:1em 5% ;height:6em;margin-bottom:1em;}
+			aside input[type="button"]{width:100%;height:3em;}
 /* NOTE: You should use the media queries here as a starting reference and then move the code to the seperate files for faster loading on each accessing platform */
 
 @media all and (orientation:portrait) {
@@ -98,20 +106,26 @@ body{background-image:-webkit-linear-gradient(top, #eee, #aaa);background-attach
   /* style adjustments for landscape mode goes here */
 
 }
+@media screen and (max-width: 600px) {
+	header{margin-bottom:3em;}
+}
 @media screen and (min-width: 600px) {
 	/* Styling of the desktop experience of your website goes here */
-			nav li{float:left;list-style:none;}
-	
+	header h1{box-shadow:none;background:none;text-align:left;padding:0;padding:.3em .2em;}
+	header h1 span{text-transform:uppercase;color:#333;}
+	nav ul{box-shadow:none;background:none;margin-top:2em;}
+		nav li{float:left;list-style:none;}
+		nav li a{padding:.5em 1em;display:block;margin-left:1em;font-size:1em;}
+		nav li a:hover{background:#fff;-webkit-box-shadow:inset 0 0 .4em #000;border-radius:.3em;}
 		#main a{width:29%;-webkit-transition:width .5s ease;}
+	#nav-more{display:none;}
+	#main a img{opacity:70%;}
+	
 }
 
-@media 	screen and (orientation:portrait), 
-				screen and (min-device-width: 700px), 
-				screen and (max-device-width: 1000px) {
+@media 	screen and (orientation:portrait) and (min-device-width: 700px) and (max-device-width: 1000px) {
 	/* Styling for tablet in portrait orientation goes here */
 }
-@media 	screen and (orientation:landscape), 
-				screen and (min-device-width: 1000px), 
-				screen and (max-device-width: 1300px) {
+@media 	screen and (orientation:landscape) and (min-device-width: 1000px) and (max-device-width: 1300px) {
 	/* Styling for tablet in landscape orientation goes here */
 }

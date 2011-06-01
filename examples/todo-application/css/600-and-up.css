@@ -1,0 +1,14 @@
+@media screen and (min-width:600px){
+	.scalable .grid_4-4 {width: 96%;}
+	.scalable .grid_3-4 {width: 75%;}
+	.scalable .grid_2-4 {width: 46%;}
+	.scalable .grid_1-4 {width: 21%;}
+	/* push grids */
+	.scalable .grid-push_3-4 {margin-left: 77%;}
+	.scalable .grid-push_2-4 {margin-left: 48%;}
+	.scalable .grid-push_1-4 {margin-left: 23%;}
+	/* pull grids */
+	.scalable .grid-pull_3-4 {margin-left: -77%;}
+	.scalable .grid-pull_2-4 {margin-left: -48%;}
+	.scalable .grid-pull_1-4 {margin-left: -23%;}
+}

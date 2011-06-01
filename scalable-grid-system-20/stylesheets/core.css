@@ -1,0 +1,149 @@
+/*
+  html5doctor.com reset stylesheet (eric meyer's reset reloaded + html5 baseline)
+  v1.6.1 2010-09-17 | authors: eric meyer & richard clark
+  html5doctor.com/html-5-reset-stylesheet/
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+margin:0;padding:0;border:0;font-size:100%;font: inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {display:block;}
+blockquote, q { quotes:none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content:''; content:none; }
+ins { background-color:#ff9; color:#000; text-decoration:none; }
+mark { background-color:#ff9; color:#000; font-style:italic; font-weight:bold; }
+del { text-decoration: line-through; }
+abbr[title], dfn[title] { border-bottom:1px dotted; cursor:help; }
+table { border-collapse:collapse; border-spacing:0; }
+hr { display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 0; padding:0; }
+input, select { vertical-align:middle; }
+/* end reset css */
+
+/* start 20-grid-system */
+.scalable{margin-left:auto;margin-right:auto;min-width: 26em; max-width: 106.66em;position: relative;}
+	/*Reset margin on nested grids*/
+	.grid_first{margin-left:0;}.grid_last{margin-right:0;}
+  .scalable .grid_20-20,
+  .scalable .grid_19-20,
+  .scalable .grid_18-20,
+  .scalable .grid_17-20,
+  .scalable .grid_16-20,
+  .scalable .grid_15-20,
+  .scalable .grid_14-20,
+  .scalable .grid_13-20,
+  .scalable .grid_12-20,
+  .scalable .grid_11-20,
+  .scalable .grid_10-20,
+  .scalable .grid_9-20,
+  .scalable .grid_8-20,
+  .scalable .grid_7-20,
+  .scalable .grid_6-20,
+  .scalable .grid_5-20,
+  .scalable .grid_4-20,
+  .scalable .grid_3-20,
+  .scalable .grid_2-20,
+  .scalable .grid_1-20 {
+    width: 98%;
+  }
+  /* push grids */
+  .scalable .grid-push_20-20,
+  .scalable .grid-push_19-20,
+  .scalable .grid-push_18-20,
+  .scalable .grid-push_17-20,
+  .scalable .grid-push_16-20,
+  .scalable .grid-push_15-20,
+  .scalable .grid-push_14-20,
+  .scalable .grid-push_13-20,
+  .scalable .grid-push_12-20,
+  .scalable .grid-push_11-20,
+  .scalable .grid-push_10-20,
+  .scalable .grid-push_9-20,
+  .scalable .grid-push_8-20,
+  .scalable .grid-push_7-20,
+  .scalable .grid-push_6-20,
+  .scalable .grid-push_5-20,
+  .scalable .grid-push_4-20,
+  .scalable .grid-push_3-20,
+  .scalable .grid-push_2-20,
+  .scalable .grid-push_1-20 {
+    margin-left: 1%;
+  }
+  /* pull grids */
+  .scalable .grid-pull_20-20,
+  .scalable .grid-pull_19-20,
+  .scalable .grid-pull_18-20,
+  .scalable .grid-pull_17-20,
+  .scalable .grid-pull_16-20,
+  .scalable .grid-pull_15-20,
+  .scalable .grid-pull_14-20,
+  .scalable .grid-pull_13-20,
+  .scalable .grid-pull_12-20,
+  .scalable .grid-pull_11-20,
+  .scalable .grid-pull_10-20,
+  .scalable .grid-pull_9-20,
+  .scalable .grid-pull_8-20,
+  .scalable .grid-pull_7-20,
+  .scalable .grid-pull_6-20,
+  .scalable .grid-pull_5-20,
+  .scalable .grid-pull_4-20,
+  .scalable .grid-pull_3-20,
+  .scalable .grid-pull_2-20,
+  .scalable .grid-pull_1-20 {
+    margin-left: 1%;
+  }
+/*set content like images,flash & video to fill the width of the grid if the content width is larger than grid width*/
+img, object, video {  max-width: 100%;}
+/* end 20-grid-system */
+
+
+
+
+/* Core styles
+   Author: 
+*/
+
+/* font normalization inspired by  from the YUI Library's fonts.css: developer.yahoo.com/yui/ */
+body { font:12px/1.231 sans-serif; *font-size:small; }
+select, input, textarea, button { font:99% sans-serif; }
+pre, code, kbd, samp { font-family: monospace, sans-serif; }
+
+/* TOOLS */
+.ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.hidden { display: none; visibility: hidden; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.invisible { visibility: hidden; }
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; visibility: hidden; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+
+
+
+
+
+
+
+/* NOTE: You should use the media queries here as a starting reference and then move the code to the seperate files for faster loading on each accessing platform */
+@media all and (orientation:portrait) {
+  /* style adjustments for portrait mode goes here */
+}
+@media all and (orientation:landscape) {
+  /* style adjustments for landscape mode goes here */
+}
+@media screen and (min-width: 600px) {
+	/* Styling of the desktop experience of your website goes here */
+}
+@media 	screen and (orientation:portrait) and (min-device-width: 700px) and (max-device-width: 1000px) {
+	/* Styling for tablet in portrait orientation goes here */
+}
+@media 	screen and (orientation:landscape) and (min-device-width: 1000px)  and (max-device-width: 1300px) {
+	/* Styling for tablet in landscape orientation goes here */
+}

@@ -1,0 +1,7 @@
+/* Tablet specific CSS */
+@media all and (orientation:portrait) {
+  /* style adjustments for portrait mode goes here */
+}
+@media all and (orientation:landscape) {
+  /* style adjustments for landscape mode goes here */
+}

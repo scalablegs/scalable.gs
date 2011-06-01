@@ -28,42 +28,43 @@
 <body lang="en">
   <div class="scalable">
     <header class="clearfix">
-			<hgroup class="grid_4-12">
-				<h1>Digital Assets</h1>
+			<hgroup class="grid_8-12">
+				<h1>digital<span>assets</span></h1>
 				<h2>Scalable Grid System | Digital assets store example</h2>
 			</hgroup>
-			<nav class="grid_6-12 grid-push_2-12">
+			<nav id="navigation" class="grid_4-12">
 				<ul>
-					<li><a href="products.html" title="#">Products</a></li>
-					<li><a href="/" title="#">Home</a></li>
+					<li><a href="/" title="#">Products</a></li>
 					<li><a href="about.html" title="#">About</a></li>
 					<li><a href="contact.html" title="#">Contact</a></li>
 				</ul>
+				<a href="#" id="nav-more">more</a>
 			</nav>
     </header>
-    <section id="main" role="main" class="grid_8-12 clearfix">
+    <section id="main" role="main" class="grid_8-12">
+   			<a href="product.html" class="product"><img src="images/content/product-blog.jpg" alt=""></a>
+   			<a href="product.html" class="product"><img src="images/content/product-connect.jpg" alt=""></a>
+   			<a href="product.html" class="product"><img src="images/content/product-network.jpg" alt=""></a>
+   			<a href="product.html" class="product"><img src="images/content/product-video.jpg" alt=""></a>
    			<a href="product.html" class="product"><img src="images/content/product.jpg" alt=""></a>
-   			<a href="product.html" class="product"><img src="images/content/product.jpg" alt=""></a>
-   			<a href="product.html" class="product"><img src="images/content/product.jpg" alt=""></a>
-   			<a href="product.html" class="product"><img src="images/content/product.jpg" alt=""></a>
-   			<a href="product.html" class="product"><img src="images/content/product.jpg" alt=""></a>
-   			<a href="product.html" class="product"><img src="images/content/product.jpg" alt=""></a>
-   			<a href="product.html" class="product"><img src="images/content/product.jpg" alt=""></a>
-   			<a href="product.html" class="product"><img src="images/content/product.jpg" alt=""></a>
+   			<a href="product.html" class="product"><img src="images/content/product-blog.jpg" alt=""></a>
+   			<a href="product.html" class="product"><img src="images/content/product-connect.jpg" alt=""></a>
+   			<a href="product.html" class="product"><img src="images/content/product-network.jpg" alt=""></a>
+   			<a href="product.html" class="product"><img src="images/content/product-video.jpg" alt=""></a>
    			<a href="product.html" class="product"><img src="images/content/product.jpg" alt=""></a>
     </section>
 		<aside class="grid_4-12">
     		<div>
     			<h1>Connect with us</h1>
 		    	<ul>
-		    		<li><a href="#" title="#">Github</a></li>
 		    		<li><a href="#" title="#">Twitter</a></li>
 		    		<li><a href="#" title="#">Facebook</a></li>
+			    	<li><a href="#" title="#">Github</a></li>
 		    		<li><a href="#" title="#">Email</a></li>
 		    	</ul>
     		</div>
     		<div>
-    			<h1>Contact</h1>
+    			<h1>Contact:</h1>
     			<form>
     					<input type="text" placeholder="Your Name">
     					<input type="email" placeholder="Your Email">
@@ -76,7 +77,17 @@
 			<p>&copy; 2011 Site Owner</p>	
     </footer>
   </div> 
-
+	<script>
+		$(function() {
+			$("#nav-more").toggle(function(){
+				$("#navigation ul").css("height","150");
+				return false;
+			}, function(){
+				$("#navigation ul").css("height","50");
+				return false;
+			});
+		});
+	</script>
   <!--[if lt IE 7 ]>
     <script src="js/libs/dd_belatedpng.js"></script>
     <script>DD_belatedPNG.fix('img, .png_bg');</script>

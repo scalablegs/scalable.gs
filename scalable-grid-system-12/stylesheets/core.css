@@ -48,7 +48,7 @@ img, object, video {  max-width: 100%;}
 
 
 
-/* Fluid (mobile) styles
+/* Core styles
    Author: 
 */
 
@@ -71,36 +71,21 @@ pre, code, kbd, samp { font-family: monospace, sans-serif; }
 
 
 
-body{background-image:-webkit-linear-gradient(top, #eee, #aaa);background-attachment:fixed;}
-	#main a{display:block;width:46%;margin:2%;float:left;}
-
-
-
 
 
 /* NOTE: You should use the media queries here as a starting reference and then move the code to the seperate files for faster loading on each accessing platform */
-
 @media all and (orientation:portrait) {
   /* style adjustments for portrait mode goes here */
-
 }
-
 @media all and (orientation:landscape) {
   /* style adjustments for landscape mode goes here */
-
 }
 @media screen and (min-width: 600px) {
 	/* Styling of the desktop experience of your website goes here */
-	#main a{width:29%;-webkit-transition:width .5s ease;}
 }
-
-@media 	screen and (orientation:portrait), 
-				screen and (min-device-width: 700px), 
-				screen and (max-device-width: 1000px) {
+@media 	screen and (orientation:portrait) and (min-device-width: 700px) and (max-device-width: 1000px) {
 	/* Styling for tablet in portrait orientation goes here */
 }
-@media 	screen and (orientation:landscape), 
-				screen and (min-device-width: 1000px), 
-				screen and (max-device-width: 1300px) {
+@media 	screen and (orientation:landscape) and (min-device-width: 1000px)  and (max-device-width: 1300px) {
 	/* Styling for tablet in landscape orientation goes here */
 }
