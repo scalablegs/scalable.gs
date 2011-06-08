@@ -1,0 +1,106 @@
+<!doctype html>  
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ --> 
+<!--[if lt IE 7 ]> <html class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Scalable Grid System | Digital assets store example</title>
+  <meta name="description" content="">
+  <meta name="author" content="Kenneth Nordahl">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="initial-scale=1.0">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <script src="javascripts/libs/modernizr-1.7.min.js"></script>
+	<!--<noscript> -->
+	<link rel="stylesheet" href="stylesheets/core.css" />
+	<link rel="stylesheet" media="screen and (min-width: 600px)" href="stylesheets/600-and-up.css" />
+	<!--</noscript> -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="javascripts/libs/jquery-1.6.1.min.js"%3E%3C/script%3E'))</script>
+  <script src="javascripts/plugins.js"></script>	
+  <script src="javascripts/script.js"></script>
+  <script src="javascripts/libs/respond.min.js"></script>
+</head>
+
+<body lang="en">
+  <div class="scalable">
+    <header class="clearfix">
+			<hgroup class="grid_8-12">
+				<h1>digital<span>assets</span></h1>
+				<h2>Scalable Grid System | Digital assets store example</h2>
+			</hgroup>
+			<nav id="navigation" class="grid_4-12">
+				<ul>
+					<li><a href="/" title="#">Products</a></li>
+					<li><a href="blog.html" title="#">Blog</a></li>
+					<li><a href="contact.html" title="#">Contact</a></li>
+				</ul>
+				<a href="#" id="nav-more">more</a>
+			</nav>
+    </header>
+    <section id="main" role="main" class="grid_8-12">
+			<article class="clearfix">
+   			<a href="product.html" class="product"><img src="images/content/product-blog.jpg" alt=""></a>
+   			<a href="product.html" class="product"><img src="images/content/product-connect.jpg" alt=""></a>
+   			<a href="product.html" class="product"><img src="images/content/product-network.jpg" alt=""></a>
+   			<a href="product.html" class="product"><img src="images/content/product-video.jpg" alt=""></a>
+   			<a href="product.html" class="product"><img src="images/content/product.jpg" alt=""></a>
+   			<a href="product.html" class="product"><img src="images/content/product-blog.jpg" alt=""></a>
+   			<a href="product.html" class="product"><img src="images/content/product-connect.jpg" alt=""></a>
+   			<a href="product.html" class="product"><img src="images/content/product-network.jpg" alt=""></a>
+   			<a href="product.html" class="product"><img src="images/content/product-video.jpg" alt=""></a>
+   			<a href="product.html" class="product"><img src="images/content/product.jpg" alt=""></a>
+			</article>
+    </section>
+		<aside class="grid_4-12">
+    		<div>
+    			<h1>Connect with us</h1>
+		    	<ul>
+		    		<li><a href="#" title="#">Twitter</a></li>
+		    		<li><a href="#" title="#">Facebook</a></li>
+			    	<li><a href="#" title="#">Github</a></li>
+		    		<li><a href="#" title="#">Email</a></li>
+		    	</ul>
+    		</div>
+    		<div>
+    			<h1>Contact:</h1>
+    			<form>
+    					<input type="text" placeholder="Your Name">
+    					<input type="email" placeholder="Your Email">
+    					<textarea placeholder="Your comment"></textarea>
+    					<input type="button" value="Send">
+    			</form>
+    		</div>
+		</aside>
+    <footer class="grid_12-12">
+			<p>&copy; 2011 Site Owner</p>	
+    </footer>
+  </div> 
+	<script>
+		$(function() {
+			$("#nav-more").toggle(function(){
+				$("#navigation ul").css("height","200");
+				return false;
+			}, function(){
+				$("#navigation ul").css("height","50");
+				return false;
+			});
+		});
+	</script>
+  <!--[if lt IE 7 ]>
+    <script src="js/libs/dd_belatedpng.js"></script>
+    <script>DD_belatedPNG.fix('img, .png_bg');</script>
+  <![endif]-->
+  <script>
+    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+  
+</body>
+</html>

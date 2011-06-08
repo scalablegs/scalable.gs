@@ -1,0 +1,90 @@
+<!doctype html>  
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Scalable Grid System | Digital assets store example</title>
+  <meta name="description" content="">
+  <meta name="author" content="Kenneth Nordahl">
+	<style>
+		body{width:960px;}
+		.container_12 > header{background:green;float:left;}
+	
+		#main {background:blue;width:600px;float:left;}
+		aside{background:red;width:300px;margin-left:40px;;float:left;}
+		footer{background:green;width:960px;float:left;}
+	</style>
+</head>
+
+<body lang="en">
+  <div class="">
+    <header class="">
+			<hgroup class="">
+				<h1>digital<span>assets</span></h1>
+				<h2>Scalable Grid System | Digital assets store example</h2>
+			</hgroup>
+			<nav >
+				<ul>
+					<li><a href="/" title="#">Products</a></li>
+					<li><a href="blog.html" title="#">Blog</a></li>
+					<li><a href="contact.html" title="#">Contact</a></li>
+				</ul>
+				<a href="#" id="nav-more">more</a>
+			</nav>
+    </header>
+    <section id="main" role="main">
+			<article>
+   			<header>
+					<h1>Blog title</h1>
+				</header>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>				
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</article>
+    </section>
+		<aside>
+    		<div>
+    			<h1>Connect with us</h1>
+		    	<ul>
+		    		<li><a href="#" title="#">Twitter</a></li>
+		    		<li><a href="#" title="#">Facebook</a></li>
+			    	<li><a href="#" title="#">Github</a></li>
+		    		<li><a href="#" title="#">Email</a></li>
+		    	</ul>
+    		</div>
+    		<div>
+    			<h1>Contact:</h1>
+    			<form>
+    					<input type="text" placeholder="Your Name">
+    					<input type="email" placeholder="Your Email">
+    					<textarea placeholder="Your comment"></textarea>
+    					<input type="button" value="Send">
+    			</form>
+    		</div>
+		</aside>
+    <footer>
+			<p>&copy; 2011 Site Owner</p>	
+    </footer>
+  </div> 
+	<script>
+		$(function() {
+			$("#nav-more").toggle(function(){
+				$("#navigation ul").css("height","200");
+				return false;
+			}, function(){
+				$("#navigation ul").css("height","50");
+				return false;
+			});
+		});
+	</script>
+  <!--[if lt IE 7 ]>
+    <script src="js/libs/dd_belatedpng.js"></script>
+    <script>DD_belatedPNG.fix('img, .png_bg');</script>
+  <![endif]-->
+  <script>
+    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+  
+</body>
+</html>
